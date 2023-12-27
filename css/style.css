@@ -8,13 +8,16 @@ button {
 	all: unset;
 }
 
+img {
+	display: block;
+	border: none;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 	color: #5D5D5D;
 	font-size: 14px;
-	font-style: normal;
 	font-weight: 300;
-	line-height: normal;
 }
 
 .nav {
@@ -70,6 +73,17 @@ body {
 .brand__img {
 	width: 100%;
 }
+
+/* Шутка на полчаса гугления (три пикселя под brand.png): <img> — inline элемент по умолчанию. Т.е. грубо говоря,
+строка. А у строк есть межстрочное расстояние. Напишите этой картинке стиль display:block и отступ пропадет.*/
+
+/* Обнулил стили <img> наверху, перед тегом <body> */
+
+/* .picture {
+	display: block;
+} */
+
+
 
 .brand__logo {
 	width: 100%;
